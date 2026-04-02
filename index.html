@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Gomathi — Data Analyst & BI Developer</title>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main Template CSS -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <style>
+    :root{
+      --bg:#f8f5ef;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --accent:#0ea5a4;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body{
+      background: var(--bg);
+      color: var(--text);
+      font-size:16px;
+    }
+
+    h2{ font-size:1.6rem; }
+    h3{ font-size:1.2rem; }
+    p, li{ font-size:1rem; }
+
+    /* NAV FIX */
+    #nav ul li a {
+      color:#fff !important;
+      opacity:1 !important;
+    }
+
+    #nav ul li a:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* ICON FIX */
+    .icons a{
+      color:#fff !important;
+    }
+
+    .icons a:hover{
+      color: var(--accent) !important;
+    }
+
+    /* PORTFOLIO */
+    .portfolio-container{
+      display:flex;
+      flex-wrap:wrap;
+      gap:25px;
+      justify-content:center;
+    }
+
+    .project-card{
+      cursor: pointer;
+      background:var(--card);
+      width:700px;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .project-card img{
+      width:80%;
+      height:200px;
+      margin-top:30px;
+      object-fit:contain;
+    }
+    .project-card img:hover {
+      transform: scale(1.03);
+    }
+    .project-card .content{
+      padding:50px;
+    }
+
+    .project-card ul{
+      padding-left:80px;
+    }
+
+    .buttons{
+      display:flex;
+      justify-content:space-between;
+      margin-top:10px;
+    }
+
+    .buttons a{
+      background:var(--accent);
+      color:white;
+      padding:6px 10px;
+      border-radius:6px;
+      text-decoration:none;
+      font-size:0.85rem;
+      transition: transform 0.3s ease;
+    }
+
+    .buttons a:hover{
+      background:#0c8f8d;
+      transform:translateY(-6px);
+    }
+	section .container {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  </style>
+</head>
+
+<body class="is-preload">
+
+<!-- HEADER -->
+<div id="header">
+  <div class="top">
+
+    <div id="logo">
+      <span class="image avatar48"><img src="images/Lathapic.jpeg" /></span>
+      <h1 id="title">Gomathi Latha</h1>
+      <p>Data Analyst & BI Developer</p>
+    </div>
+
+    <nav id="nav">
+      <ul>
+        <li><a href="#top"><span class="icon solid fa-home">Intro</span></a></li>
+        <li><a href="#portfolio"><span class="icon solid fa-th">Portfolio</span></a></li>
+        <li><a href="#about"><span class="icon solid fa-user">About</span></a></li>
+        <li><a href="#experience"><span class="icon solid fa-briefcase">Experience</span></a></li>
+        <li><a href="#contact"><span class="icon solid fa-envelope">Contact</span></a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="bottom">
+    <ul class="icons">
+      <li><a href="https://github.com/gomathilathaa"><span class="icon brands fa-github"></span></a></li>
+      <li><a href="https://www.linkedin.com/in/gomathi-latha/"><span class="icon brands fa-linkedin"></span></a></li>
+      <li><a href="mailto:gomathilatha.j@gmail.com"><span class="icon solid fa-envelope"></span></a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+
+<!-- INTRO -->
+<section id="top" class="one dark cover">
+  <div class="container">
+
+    <header>
+      <h2 class="alt">
+        Hi! I'm <strong>Gomathi Latha</strong><br/>
+        Data Analyst & BI Developer
+      </h2>
+
+      <p>
+        I build scalable data solutions using SQL, Power BI, and ETL pipelines.
+        Transforming messy data into clear insights.
+      </p>
+	  <p>
+        Experienced in data modeling, automation, and executive dashboards that help 
+        teams track performance, identify opportunities, and make confident business decisions.
+      </p>
+    </header>
+
+    <footer>
+      <a href="#portfolio" class="button scrolly">View My Work</a>
+    </footer>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" >
+  <div class="container">
+
+    <h2>Business Intelligence Solutions</h2>
+
+    <!-- POWER BI -->
+    <h3>Interactive Performance Analytics Dashboard</h3>
+    <div class="portfolio-container">
+
+      <!-- Business Insights 360 -->
+      <div class="project-card">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiMGMwNDNmYTktMjRkMi00YWQzLWI1MWItMjNlNDRiOTg1NDZmIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">
+          <img src="images/Business_Insights_360.jpg">
+        </a>
+        <div class="content">
+          <h3>Business Insights 360</h3>
+          <p class="meta">Industry: Consumer Electronics | Domain: Sales, Finance, Supply Chain</p>
+          <ul>
+            <li>End-to-end KPI reporting (Revenue, Gross Margin, Profitability)</li>
+            <li>Customer & market-level profitability analysis</li>
+            <li>P&L trend analysis and margin recovery insights</li>
+            <li>Executive decision dashboard for cross-functional teams</li>
+          </ul>
+          <div class="buttons">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMGMwNDNmYTktMjRkMi00YWQzLWI1MWItMjNlNDRiOTg1NDZmIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9">View Live Dashboard</a>
+            <a href="https://github.com/Gomathilathaa/BusinessInsights360">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hospitality -->
+      <div class="project-card">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiODljNGZkNDUtNDM4MC00NmZkLTlhY2MtYzAyZDRjNGZiODg2IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">
+          <img src="images/Hospitality.jpeg">
+        </a>  
+        <div class="content">
+          <h3>Hospitality Analytics – AtliQ Grands</h3>
+          <p class="meta">Industry: Hospitality | Domain: Revenue Management</p>
+          <ul>
+            <li>Revenue optimization analysis (RevPAR, ADR, Occupancy)</li>
+            <li>Booking channel performance & commission impact analysis</li>
+            <li>Seasonality trends (weekday vs weekend demand patterns)</li>
+            <li>Market share recovery insights & pricing strategy recommendations</li>
+          </ul>
+          <div class="buttons">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiODljNGZkNDUtNDM4MC00NmZkLTlhY2MtYzAyZDRjNGZiODg2IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9">View Live Dashboard</a>
+            <a href="https://github.com/Gomathilathaa/AtliQ-Grands-Hospitality-Management">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sales -->
+      <div class="project-card">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZGQ2NWMwODctZTRmZi00ZWMzLWI1M2UtNjdkM2E3ZjA0NDAyIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">
+          <img src="images/Mobile_Sales.jpg">
+        </a>
+        <div class="content">
+          <h3>Mobile Sales Performance Analysis</h3>
+          <p class="meta">Industry: Retail / E-commerce | Domain: Sales & Customer Analytics</p>
+          <ul>
+            <li>Multi-country sales performance & regional revenue analysis</li>
+            <li>Customer segmentation (age, gender, behavior patterns)</li>
+            <li>Product & feature demand analysis (pricing vs volume trade-offs)</li>
+            <li>Market positioning insights (premium vs volume-driven regions)</li>
+          </ul>
+          <div class="buttons">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZGQ2NWMwODctZTRmZi00ZWMzLWI1M2UtNjdkM2E3ZjA0NDAyIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9">View Live Dashboard</a>
+            <a href="https://github.com/Gomathilathaa/Mobile-Sales-Dashboard">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+    <!-- ETL -->
+    <h3 style="margin-top:40px;">End-to-End Data Pipeline & ETL Solutions</h3>
+    <div class="portfolio-container">
+
+      <div class="project-card">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiMzA5ZmY4YmMtMDU3ZS00Yjg0LWEyMzQtM2NhNzI2ODlhODg3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">
+          <img src="images/Property_Analysis.jpg">
+        </a>
+        <div class="content">
+          <h3>Property Data Warehouse</h3>
+          <ul>
+            <li>Designed end-to-end ETL pipelines for multi-source Excel datasets</li>
+            <li>Implemented dynamic file loading and staging layers using SSIS</li>
+            <li>Data cleansing, standardization, and duplicate handling</li>
+            <li>Derived columns and surrogate key mapping for dimensional modeling</li>
+            <li>Star schema design with fact & dimension tables</li>
+            <li>Automated loading, transformation, and aggregation of property, rental, crime, and location data</li>
+            <li>Power BI dashboards providing actionable insights on property value trends, rental patterns, and crime impact</li>
+          </ul>
+          </ul>
+          <div class="buttons">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiMzA5ZmY4YmMtMDU3ZS00Yjg0LWEyMzQtM2NhNzI2ODlhODg3IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9">View Live Dashboard</a>
+            <a href="https://github.com/Gomathilathaa/Property-Analysis-Automated-ETL-Reporting-System">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZjQwZWZiYmQtYjFjNS00YjQ0LTgwNTMtYjBiMjk2OGQ3ZjcxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9" target="_blank">
+          <img src="images/Aimy_Financial_Dashboard.jpg">
+        </a>
+        <div class="content">
+          <h3>Financial Analytics</h3>
+          <ul>
+            <li>Unified financial data from multiple operational tables using SQL transformation layer</li>
+            <li>Star schema modeling for fact and dimension tables</li>
+            <li>Implemented lightweight ELT process for dashboard-ready analytics</li>
+            <li>Built executive KPIs with variance, trend analysis, and business unit comparisons</li>
+            <li>Simulated end-to-end analytics workflow: Extract → Transform → Load → Power BI dashboards</li>
+            <li>Used synthetic data to demonstrate realistic financial insights while maintaining privacy</li>
+          </ul>
+          <div class="buttons">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiZjQwZWZiYmQtYjFjNS00YjQ0LTgwNTMtYjBiMjk2OGQ3ZjcxIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9">View Live Dashboard</a>
+            <a href="https://github.com/Gomathilathaa/Financial-Report---Aimy-Education-">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="three">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <p>
+      I’m a Data Analyst focused on building scalable analytics solutions using Power BI, SQL, and ETL tools. 
+      My work includes designing clean star-schema data models, developing automated ETL pipelines, and creating 
+      executive dashboards that simplify decision-making for business users.
+    </p>
+
+    <p>
+      After returning to tech following a career break, I invested deeply in upskilling through hands-on projects, 
+      structured learning, and real-world BI experience at MVP Studio. I enjoy transforming messy, inconsistent data 
+      into reliable insights that support financial, operational, and performance analysis.
+    </p>
+    <p><strong>My Key Capabilities</strong></p>
+    <ul>
+      <li>Star-schema data modeling</li>
+      <li>Power BI dashboards with strong business context</li>
+      <li>SQL optimisation and data processing</li>
+	  <li>Automated ETL workflows using SSIS</li>
+	  <li>Transforming raw, messy data into structured analytics</li>
+    </ul>
+	<p><strong>My Approach to Data</strong></p>
+	<p>
+      Clean data, clear visuals, and the satisfaction of building data models and dashboards that are both reliable 
+      and easy for teams to use.
+    </p>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="three">
+  <div class="container">
+    <h2>Experience</h2>
+
+    <h3>Business Intelligence Intern – MVP Studio</h3>
+    <ul>
+        <li>Designed and implemented star-schema data models (fact & dimension tables) to support scalable analytics and reporting</li>
+        <li>Built and automated ETL pipelines using SSIS to integrate and transform data from multiple sources</li>
+        <li>Developed SQL transformation logic and optimized queries to improve data retrieval and reporting performance</li>
+        <li>Implemented data validation checks to ensure accuracy and consistency across datasets</li>
+        <li>Created executive Power BI dashboards delivering insights on financial and operational KPIs</li>
+        <li>Worked with complex, multi-table datasets, handling schema design and data integration challenges</li>
+    </ul>
+
+	<h3>Data Analyst Intern – AtliQ Technologies</h3>
+    <ul>
+        <li>Cleaned, transformed, and structured raw datasets for analysis and reporting</li>
+        <li>Automated manual reporting workflows using Power Query, improving efficiency</li>
+        <li>Performed ad-hoc analysis to support business decision-making</li>
+        <li>Developed interactive dashboards to present insights to stakeholders</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="three">
+  <div class="container">
+    <h2>Contact</h2>
+
+
+	<p>Looking for someone who can turn messy data into meaningful insights? Let’s connect.</p>
+    <p>Email: gomathilatha.j@gmail.com</p>
+
+  </div>
+</section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
